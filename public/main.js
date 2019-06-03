@@ -23,7 +23,7 @@ $(function() {
   var lastTypingTime;
   var $currentInput = $usernameInput.focus();
 
-  var socket = io();
+  var socket = io("https://hoonzinope.github.io/public/");
 
   const addParticipantsMessage = (data) => {
     var message = '';
