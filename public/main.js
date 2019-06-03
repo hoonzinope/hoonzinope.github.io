@@ -25,7 +25,7 @@ $(function() {
 
   //var socket = io();
   var host = window.location.hostname;
-  var socket = io.connect('https://' + host);
+  var socket = io();//.connect('https://' + host);
 
   const addParticipantsMessage = (data) => {
     var message = '';
