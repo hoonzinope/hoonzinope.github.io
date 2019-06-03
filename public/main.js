@@ -23,8 +23,10 @@ $(function() {
   var lastTypingTime;
   var $currentInput = $usernameInput.focus();
 
-  var socket = io();
-
+  //var socket = io();
+  var host = window.location.hostname;
+  var socket = io.connect('http://' + host);
+  
   const addParticipantsMessage = (data) => {
     var message = '';
     if (data.numUsers === 1) {
